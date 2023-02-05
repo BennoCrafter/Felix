@@ -1,21 +1,58 @@
 {
-  "patterns": [
-    {
-      "keywords": ["hello", "hi", "greetings","hey"],
-      "response": "Hello, how are you today?"
-    },
-    {
-      "keywords": ["good", "great", "fantastic", "fine"],
-      "response": "That's wonderful to hear! Is there anything else you'd like to chat about?"
-    },
-    {
-      "keywords": ["no", "nothing"],
-      "response": "Alright, have a great day! If you have any other questions, feel free to reach out."
-    },
-    {
-      "keywords": ["what's up","whats up","how are you"],
-      "response": "I'm good and you?"
-    }
-
-  ]
+    "patterns": [
+        {
+            "keywords": [
+                "hello",
+                "hi",
+                "greetings",
+                "hey"
+            ],
+            "response": "Hello, how are you today?",
+            "deeper_info": "greeting"
+        },
+        {
+            "keywords": [
+                "good",
+                "great",
+                "fantastic",
+                "fine"
+            ],
+            "response": "That's wonderful to hear! Is there anything else you'd like to chat about?",
+            "deeper_info": "yes|no"
+        },
+        {
+            "keywords": [
+                "no",
+                "nothing"
+            ],
+            "response": "Alright, have a great day! If you have any other questions, feel free to reach out.",
+            "deeper_info": ""
+        },
+        {
+            "keywords": [
+                "what's up",
+                "whats up",
+                "how are you"
+            ],
+            "response": "I'm good and you?",
+            "deeper_info": "deeper_conversation"
+        },
+        {
+            "keywords": [
+                "thanks",
+                "thx"
+            ],
+            "response": "You're Welcome :)",
+            "deeper_info": ""
+        },
+        {
+            "keywords": [
+                "bye",
+                "exit",
+                "over"
+            ],
+            "response": "Goodbye!",
+            "deeper_info": ""
+        }
+    ]
 }

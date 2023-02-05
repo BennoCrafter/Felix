@@ -1,3 +1,4 @@
+from commands.commands_info import commands_info
 from commands.test import test
 from commands.read_backwards import read_backwards
 from commands.calculator import calculator
@@ -12,7 +13,8 @@ class GetRightCommand:
             "read backwards": read_backwards,
             "calculator": calculator,
             "translate": translate,
-            "pop-up notification": send_notification
+            "pop-up notification": send_notification,
+            "commands": commands_info
         }
 
     def setup(self, user_input):
@@ -20,7 +22,11 @@ class GetRightCommand:
 
     def find_command(self):
         if self.user_inp in self.commands.keys():
-            self.commands[self.user_inp]()
+            # check if it's a special command
+            if self.user_inp == "commands":
+                print(f"The current commands are: {list(self.commands.keys())}")
+            else:
+                self.commands[self.user_inp]()
         else:
             print(f"Command '{self.user_inp}' not found.")
 

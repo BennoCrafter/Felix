@@ -1,2 +1,2 @@
 def calculator():
-    pass
+    calculation = input("Please enter the calculation:")
