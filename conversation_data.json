@@ -1,0 +1,21 @@
+{
+  "patterns": [
+    {
+      "keywords": ["hello", "hi", "greetings","hey"],
+      "response": "Hello, how are you today?"
+    },
+    {
+      "keywords": ["good", "great", "fantastic", "fine"],
+      "response": "That's wonderful to hear! Is there anything else you'd like to chat about?"
+    },
+    {
+      "keywords": ["no", "nothing"],
+      "response": "Alright, have a great day! If you have any other questions, feel free to reach out."
+    },
+    {
+      "keywords": ["what's up","whats up","how are you"],
+      "response": "I'm good and you?"
+    }
+
+  ]
+}
