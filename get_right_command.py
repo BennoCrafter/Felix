@@ -2,6 +2,7 @@ from commands.commands_info import commands_info
 from commands.test import test
 from commands.read_backwards import read_backwards
 from commands.calculator import calculator
+from commands.todo import *
 from commands.translate import translate
 from commands.message_pop_up import send_notification
 
@@ -14,7 +15,11 @@ class GetRightCommand:
             "calculator": calculator,
             "translate": translate,
             "pop-up notification": send_notification,
-            "commands": commands_info
+            "commands": commands_info,
+            "show todo": show_todo,
+            "add todo": add_todo_point,
+            "rename todo": rename_todo_list,
+            "check off todo": remove_todo_point
         }
 
     def setup(self, user_input):
