@@ -44,6 +44,8 @@ class ChatBot:
             if self.user_input[0] == "!" and self.user_input.replace("!", "") in self.command_finder.commands.keys():
                 self.command_finder.setup(user_input=self.user_input.replace("!", ""))
                 self.command_finder.find_command()
+                possible_responses.pop(0)
+                possible_responses.append("Command executed successfully!")
         else:
             possible_responses.pop(0)
 
