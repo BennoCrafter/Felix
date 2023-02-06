@@ -19,7 +19,8 @@ class GetRightCommand:
             "show todo": show_todo,
             "add todo": add_todo_point,
             "rename todo": rename_todo_list,
-            "check off todo": remove_todo_point
+            "check off todo": remove_todo_point,
+            "add notification todo": add_notification_todo
         }
 
     def setup(self, user_input):

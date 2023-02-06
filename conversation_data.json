@@ -12,6 +12,15 @@
         },
         {
             "keywords": [
+                "not good",
+                "bad",
+                "awfull"
+            ],
+            "response": "Ohh. What's wrong?  ┏༼ ◉╭╮◉༽┓",
+            "deeper_info": ""
+        },
+        {
+            "keywords": [
                 "good",
                 "great",
                 "fantastic",
@@ -22,8 +31,8 @@
         },
         {
             "keywords": [
-                "no",
-                "nothing"
+                "nothing",
+                "nope"
             ],
             "response": "Alright, have a great day! If you have any other questions, feel free to reach out.",
             "deeper_info": ""

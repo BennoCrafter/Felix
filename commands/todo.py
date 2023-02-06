@@ -6,13 +6,27 @@ def add_todo_point():
     print("Addded successfuly!")
 
 
+def add_notification_todo():
+    todo_to_add = input("What do you want to add?:")
+    time_to_notificate = input("When do you want to get notificated? (Please use following format! year-month-day-hour-minute): ")
+
+    with open("UserDataStorage/todo_list.txt", "a+") as file:
+        file.write(f"{todo_to_add}|||{time_to_notificate}\n")
+        file.close()
+    print("Addded successfuly!")
+
+
 def remove_todo_point():
     item = int(input("Which Item do you want to check off?:"))
     content = open("UserDataStorage/todo_list.txt").read().split("\n")
-    content.pop(item)
-    content_new = '\n'.join(content)
-    write(content=content_new)
-    print("Checked off!")
+
+    if item <= len(content):
+        content.pop(item)
+        content_new = '\n'.join(content)
+        write(content=content_new)
+        print("Checked off!")
+    else:
+        print("You're Item isn't in your todo list!")
 
 
 def rename_todo_list():
