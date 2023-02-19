@@ -2,12 +2,12 @@ from commands.commands_info import commands_info
 from commands.get_length import get_length
 from commands.test import test
 from commands.read_backwards import read_backwards
-from commands.calculator import calculator
 from commands.todo import *
 from commands.translate import translate
 from commands.message_pop_up import send_notification
 from commands.show_commits import show_commits
 from commands.tree import generate_tree
+from commands.math_interpreter.calculator import calculate
 
 
 class GetRightCommand:
@@ -15,7 +15,6 @@ class GetRightCommand:
         self.commands = {
             "test": test,
             "read backwards": read_backwards,
-            "calculator": calculator,
             "translate": translate,
             "pop-up notification": send_notification,
             "commands": commands_info,
@@ -26,7 +25,8 @@ class GetRightCommand:
             "add notification todo": add_notification_todo,
             "show git commits": show_commits,
             "directory tree": generate_tree,
-            "get length": get_length
+            "get length": get_length,
+            "calculate": calculate
         }
 
     def setup(self, user_input):
