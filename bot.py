@@ -28,7 +28,8 @@ class ChatBot:
             self.get_output_of_data(user_input=user_input)
 
     def update(self):
-        print("Now Update!")
+        # print("Now Update!")
+        pass
 
     def get_output_of_data(self, user_input):
         self.user_input = user_input

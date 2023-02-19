@@ -1,5 +1,4 @@
 Things you need to do
-delete CryptoMinierSimualtor on github
 create a command where you can see all commits of a git repo
 Add a notification todo_
 Test|||2023-02-06-16-15

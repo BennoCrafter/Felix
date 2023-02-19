@@ -1,10 +1,13 @@
 from commands.commands_info import commands_info
+from commands.get_length import get_length
 from commands.test import test
 from commands.read_backwards import read_backwards
 from commands.calculator import calculator
 from commands.todo import *
 from commands.translate import translate
 from commands.message_pop_up import send_notification
+from commands.show_commits import show_commits
+from commands.tree import generate_tree
 
 
 class GetRightCommand:
@@ -20,7 +23,10 @@ class GetRightCommand:
             "add todo": add_todo_point,
             "rename todo": rename_todo_list,
             "check off todo": remove_todo_point,
-            "add notification todo": add_notification_todo
+            "add notification todo": add_notification_todo,
+            "show git commits": show_commits,
+            "directory tree": generate_tree,
+            "get length": get_length
         }
 
     def setup(self, user_input):
@@ -38,7 +44,6 @@ class GetRightCommand:
 
 
 if __name__ == "__main__":
-
     rightcommand = GetRightCommand()
     rightcommand.setup(input(">>Command:"))
     rightcommand.find_command()

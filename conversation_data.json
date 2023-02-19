@@ -16,7 +16,7 @@
                 "bad",
                 "awfull"
             ],
-            "response": "Ohh. What's wrong?  ┏༼ ◉╭╮◉༽┓",
+            "response": "Ohh. What's wrong?  \u250f\u0f3c \u25c9\u256d\u256e\u25c9\u0f3d\u2513",
             "deeper_info": ""
         },
         {
@@ -61,6 +61,14 @@
                 "over"
             ],
             "response": "Goodbye!",
+            "deeper_info": ""
+        },
+        {
+            "keywords": [
+                "nice",
+                "cool"
+            ],
+            "response": "Thanks!",
             "deeper_info": ""
         }
     ]
